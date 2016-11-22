@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.io.File;
+
+public class Test05 
+{
+	public static void main(String[] args) throws Exception 
+	{
+		Scanner sc = new Scanner(new File("def.txt"));
+		//sc.useDelimiter("\n");
+		int [] contain = new int[12];
+		int i = 0;
+		while(sc.hasNextInt())
+		{
+			contain[i] = sc.nextInt();
+			if(i%2 == 0 && i != 0)
+			{
+				contain[i+1] = contain[i-1] + contain[i-2];
+			}
+			i++;
+		}
+		//for(int j = 2; j <= 11; j+=3)
+		//System.out.println(contain[j]);
+		for(int temp : contain)
+		{
+			System.out.print(temp);
+		}
+	}
+}

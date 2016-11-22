@@ -1,0 +1,26 @@
+//Ğ´Ò»¸ö²ÊÆ±ÖĞ½±Æ÷
+import java.util.Random;
+
+public class Test07 
+{
+	public static void main(String[] args) 
+	{
+		int num = 0;
+		Random ram = new Random();
+		num = ram.nextInt();
+		num = Math.abs(num);
+		if(num > 0 && num < 10000)
+		{
+			System.out.println("¹§Ï²ÄãÖĞÁËÒ»µÈ½±!");
+		}else if (num >= 10000 && num < 100000)
+		{
+			System.out.println("¹§Ï²ÄãÖĞÁË¶şµÈ½±!");
+		}else if (num > 100000 && num < 1000000000)
+		{
+			System.out.println("¹§Ï²ÄãÖĞÁËÈıµÈ½±!");
+		}else
+		{
+			System.out.println("Ğ»Ğ»»İ¹Ë£¡");
+		}
+	}
+}
