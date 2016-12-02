@@ -1,0 +1,18 @@
+public class Test03 
+{
+	public static int Age(int n)
+	{
+		if(n == 1 )
+		{
+			return 10;
+		}
+		else
+		{
+			return Age(n-1)+2;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		 Age(8);
+	}
+}
